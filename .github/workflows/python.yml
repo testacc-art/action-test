@@ -16,7 +16,7 @@ jobs:
     - name: Install poetry
       run: pipx install poetry --pip-args=--pre
     - run: poetry config virtualenvs.prefer-active-python true
-    - uses: dmitry-shibanov/setup-python@v-dmshib/test-poetry
+    - uses: dmitry-shibanov/setup-python@v-dmshib/fix-poetry-parsing
       with:
         python-version: ${{ matrix.python-version }}
         cache: 'poetry'
